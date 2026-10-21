@@ -1,8 +1,7 @@
 # Close and warn on tickets that have become stale
 name: "Close stale tickets"
 on:
-  schedule:
-    - cron: '0 3 * * *'
+  workflow_dispatch:
 jobs:
   # Check for stale issues (no updates in 2 months)
   stale:
